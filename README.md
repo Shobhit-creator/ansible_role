@@ -7,9 +7,9 @@ myapache is the for the apache webserver httpd configuration in the backend serv
 myloadbalancer is for the front-end server.
 ____myapache_role___
 ansible-galaxy init myapache (will create myapache role)
-for myapache role i am adding apache_main.yml in this repo for main.yml of tasks folder inside myapache.
+for myapache role i am adding apache_main.yml in this repo for main.yml of tasks folder inside myapache role.
 ____myapache_role___
 ansible-galaxy init myloadbalancer (will create myapache role)
-for myloadbalancer role i am adding loadbalancer_main.yml in this repo for main.yml of tasks folder inside myloadbalancer.
+for myloadbalancer role i am adding loadbalancer_main.yml in this repo for main.yml of tasks folder inside myloadbalancer role.
 ____main.yml____
 this will be our playbook to setup loadbalancer.
