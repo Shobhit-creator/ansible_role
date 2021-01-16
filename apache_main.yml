@@ -1,0 +1,19 @@
+---
+- name: "install httpd software"
+  package:
+    name: "httpd"
+    state: present
+- package:
+    name: "php"
+    state: present
+- file:
+    path: "/var/www/html/index.php"
+    state: touch
+- copy:
+    dest: "/var/www/html/index.php"
+    src: "index.php"
+- service:
+    name: "httpd"
+    state: restarted
+# tasks file for myapache
+
