@@ -1,0 +1,12 @@
+---
+- name: "lb software"
+  package:
+          name: "haproxy"
+          state: present
+- template:
+          dest: "/etc/haproxy/haproxy.cfg"
+          src: "haproxy.cfg"
+- service:
+          name: "haproxy"
+          state: started
+# tasks file for myloadbalancer
